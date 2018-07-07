@@ -50,7 +50,7 @@ if (isset($_POST['register_btn'])) {
     mysqli_query($db, $query);
     $_SESSION['user_name'] = $username;
     $_SESSION['success'] = "You are now logged in";
-    header('location: home.php');
+    // header('location: home.php');
   }
 }
 
@@ -110,7 +110,10 @@ if (isset($_POST['log_in_btn'])) {
     <link href="css/agency.min.css" rel="stylesheet">
 
   </head>
+<style>
 
+
+</style>
   <body id="page-top">
 
     <!-- Navigation -->
@@ -516,8 +519,8 @@ if (isset($_POST['log_in_btn'])) {
             <div class="col-md-2">
             </div>
             <div class="col-md-5">
-                <form method="POST" action="index.php">
-                  <div class="col-lg-6 text-center">
+                <form method="POST">    
+                      <div class="col-lg-6 text-center">
                      <h2 class="section-heading text-uppercase">Sign Up</h2>
                   </div>
                             
@@ -540,13 +543,30 @@ if (isset($_POST['log_in_btn'])) {
                   </div>
                   <div class="col-lg-12 text-left">
                   <div id="success"></div>
-                  <button type="submit" name="register_btn">Sign Up</button>
+                  <button type="submit" name="register_btn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
                 </div>
                 </form>
             </div>
             </div>
             </div>
             </section>
+
+<button type="submit" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+<!--             // hostel question window
+ -->           
+  <div id="id01" class="modal">
+  
+  <form class="modal-content animate">
+    <h5 class="text-center">У вас есть жильё?</h5>
+
+    
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="window.location.href='yes.php'" class="cancelbtn" name="yes_reg">Yes</button>
+      <button type="button" onclick="window.location.href='no.php'" class="cancelbtn" name="no_yes">No</button>
+    </div>
+  </form>
+</div>
           
     <!-- Footer -->
     <footer>
