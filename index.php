@@ -55,10 +55,8 @@ if (isset($_POST['register_btn'])) {
   }
 }
 
-?>
 
 
-<?php
 // LOGIN USER
 if (isset($_POST['log_in_btn'])) {
   $email_in = mysqli_real_escape_string($db, $_POST['email_in']);
