@@ -46,6 +46,7 @@
 
 	$conn->close();
 ?>
-
+<br>
+<a href="home.php">Личный кабинет</a>
 </body>
 </html>
