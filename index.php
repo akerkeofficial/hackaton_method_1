@@ -1,6 +1,6 @@
 <?php
 // registration
-session_start();
+
 
 $username = "";
 $email    = "";
@@ -11,6 +11,7 @@ $db = mysqli_connect('localhost', 'root', '', 'method_hackaton_1');
 // REGISTER USER
 if (isset($_POST['register_btn'])) {
   // receive all input values from the form
+  session_start();
   $username = mysqli_real_escape_string($db, $_POST['username']);
   $email = mysqli_real_escape_string($db, $_POST['email']);
   $password = mysqli_real_escape_string($db, $_POST['password']);
