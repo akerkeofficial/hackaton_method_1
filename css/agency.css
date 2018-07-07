@@ -172,7 +172,7 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/header-bg.jpg");
+  
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -696,4 +696,213 @@ ul.social-buttons li a {
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #fed136;
+}
+
+  /*-- Slider --*/
+
+  .rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  .rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+  }
+
+  .rslides img {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  .callbacks_nav {
+    position: absolute;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    top: 50%;
+    left: 0;
+    opacity: 0.7;
+    z-index: 3;
+    text-indent: -9999px;
+    text-decoration: none;
+    height: 61px;
+    width: 38px;
+    background: transparent url("../images/themes.gif") no-repeat left top;
+    margin-top: -45px;
+  }
+
+  .callbacks_nav.next {
+    left: auto;
+    background-position: right top;
+    right: 0;
+  }
+
+  .callbacks_nav {
+    left: 20px;
+  }
+
+  .callbacks_nav.next {
+    right: 20px;
+  }
+
+  ul.callbacks_tabs.callbacks1_tabs {
+    display: none;
+  }
+
+  /*-- //Slider --*/
+
+
+  @media screen and (max-width: 1366px) {
+  .agilehovereffect li {
+    margin: 15px 9.6px;
+  }
+  .wthreexperience {
+    width: 65%;
+    margin: 0 auto;
+  }
+  .wthreexperience .animated {
+    background-size: contain;
+    margin-top: 27%;
+  }
+  .agileinfodetails {
+    padding: 225px 0;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .agilehovereffect li {
+    margin: 15px 2.4px;
+  }
+  .cd-images-list h3 {
+    font-size: 38px;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .navbar-default .navbar-nav>li>a {
+    font-size: 16px;
+  }
+  .navbar-nav > li:nth-child(3) a {
+    margin-right: 18em !important;
+  }
+  .w3lsaboutaits, .wthreelocationsaits, .agilepackagesw3l, .w3portfolioaits, .agilecontactw3ls {
+    padding: 75px 0;
+  }
+  .wthreelocationsaits h3, .agilepackagesw3l h3, .w3portfolioaits h3, .agilecontactw3ls h3 {
+    margin-bottom: 35px;
+  }
+  .w3lsaboutaits h4 {
+    font-size: 17px;
+    width: 81%;
+    margin-bottom: 40px;
+  }
+  .w3lsaboutaits-grid-1 p {
+    font-size: 16px;
+  }
+  .w3lsaboutaits-grid-1 button.btn {
+    padding: 15px 40px;
+  }
+  .w3lsaboutaits-grid-2 h3 {
+    margin-bottom: 7px;
+  }
+  .w3lsaboutaits-grid-2 p {
+    font-size: 14px;
+    line-height: 23px;
+    margin-bottom: 25px;
+  }
+  h4.modal-title {
+    margin: 0;
+    width: 100%;
+    font-size: 25px;
+  }
+  .agileinfodetails {
+    padding: 125px 0;
+  }
+  .agileinfodetails-heading h3 {
+    width: 50%;
+    font-size: 60px;
+  }
+  .agileinfodetails-paragraph p {
+    width: 70%;
+  }
+  .wthreelocationsaits .grid figure {
+    width: 32.2%;
+  }
+  .wthreelocationsaits figure.effect-zoe h4 {
+    margin-top: 3.25em;
+    font-size: 30px;
+  }
+  .agilegrid h4 {
+    font-size: 20px;
+  }
+  .item {
+    height: 600px;
+  }
+  div#small-dialog {
+    width: 60%;
+  }
+  .cd-image-block, .cd-content-block {
+    height: 500px;
+  }
+  .cd-images-list > li > a {
+    padding: 2em;
+  }
+  .cd-images-list h3 {
+    font-size: 34px;
+    text-align: center;
+  }
+  .agiletravelerw3ls img {
+    margin: 25px auto;
+    border: 3px solid #FFF;
+  }
+  li.agiletravelerw3ls p {
+    margin: 20px 0;
+  }
+  .wthreeratingaits ul li {
+    font-size: 20px;
+  }
+  #map {
+    height: 400px;
+  }
+  .agilefooterwthree-grid2 .email {
+    width: 100%;
+  }
+  .agilefooterwthree-grid2 .submit {
+    right: 5px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .agilehovereffect li {
+    margin: 15px 2.5px;
+  }
+  .navbar-default .navbar-nav>li>a {
+    font-size: 15px;
+  }
+  .wthreelocationsaits figure.effect-zoe h4 {
+    margin-top: 3.3em;
+  }
+  .cd-images-list h3 {
+    font-size: 32px;
+  }
+  .agilesocialwthree ul.social-icons li {
+    width: 13.99%;
+  }
 }

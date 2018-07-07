@@ -152,7 +152,50 @@ if (isset($_POST['log_in_btn'])) {
           <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
         </div>
       </div>
+    
+
+    <!-- Slider -->
+    <div class="slider">
+      <ul class="rslides" id="slider">
+        <li class="first-slide w3ls">
+          <img src="img/welcome-to-almaty.jpg" alt="Odyssey">
+          <div class="wthreexperience">
+            <div id="animated-example" class="animated fadeIn"></div>
+            <button onclick="myFunction()">Reload page</button>
+          </div>
+        </li>
+        <li class="second-slide aits">
+          <img src="img/almaty-2022-vue-nocturne.jpg" alt="Odyssey">
+          <div class="wthreexperience">
+            <div id="animated-example1" class="animated fadeIn"></div>
+            <button onclick="myFunction()">Reload page</button>
+          </div>
+        </li>
+        <li class="third-slide w3-agileits">
+          <img src="img/badb23d67fd20f7718abb0aa80e6713b_crop_l_2_t_0_w_764_h_429_resize_w_525_h_.jpg" alt="Odyssey">
+          <div class="wthreexperience">
+            <div id="animated-example2" class="animated fadeIn"></div>
+            <button onclick="myFunction()">Reload page</button>
+          </div>
+        </li>
+        <li class="fourth-slide agileinfo">
+          <img src="img/inner_photo-b94789ee5620a937ee48350d84c7e997.jpg" alt="Odyssey">
+          <div class="wthreexperience">
+            <div id="animated-example3" class="animated fadeIn"></div>
+            <button onclick="myFunction()">Reload page</button>
+          </div>
+        </li>
+        <li class="fifth-slide wthree">
+          <img src="img/photo_221890.jpg" alt="Odyssey">
+          <div class="wthreexperience">
+            <div id="animated-example4" class="animated fadeIn"></div>
+            <button onclick="myFunction()">Reload page</button>
+          </div>
+        </li>
+      </ul>
+    </div>
     </header>
+    <!-- //Slider -->
 
     <!-- Services -->
     <section id="services">
