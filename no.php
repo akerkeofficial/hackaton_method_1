@@ -40,7 +40,6 @@ $img9 = "img/accom/turkestan.jpg";
 $collection = array( $img, $img1, $img2,$img3,$img4,$img5,$img6,$img7,$img8,$img9);
 
 
-if ($result->num_rows > 0) {
     // output data of each row
 
     while($row = $result->fetch_assoc()) {
@@ -51,11 +50,7 @@ if ($result->num_rows > 0) {
 
 }
     }
-} else {
-    echo "0 results";
-}
-$first = $row[1];
-echo $first;
+
 $conn->close();
 
 ?> 

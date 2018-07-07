@@ -48,9 +48,9 @@ if (isset($_POST['register_btn'])) {
     $query = "INSERT INTO users (user_name, user_email, password) 
           VALUES('$username', '$email', '$password')";
     mysqli_query($db, $query);
-    $_SESSION['user_name'] = $username;
+    $_SESSION['user_email'] = $email;
     $_SESSION['success'] = "You are now logged in";
-    header('location: home.php');
+    header('location: question.php');
   }
 }
 
