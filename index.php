@@ -49,9 +49,9 @@ if (isset($_POST['register_btn'])) {
     $query = "INSERT INTO users (user_name, user_email, password) 
           VALUES('$username', '$email', '$password')";
     mysqli_query($db, $query);
-    $_SESSION['user_name'] = $username;
+    $_SESSION['user_email'] = $email;
     $_SESSION['success'] = "You are now logged in";
-    header('location: forls.php');
+    header('location: question.php');
   }
 }
 
@@ -117,7 +117,7 @@ if (isset($_POST['log_in_btn'])) {
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Priezjie.com</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -125,19 +125,19 @@ if (isset($_POST['log_in_btn'])) {
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+              <a class="nav-link js-scroll-trigger" href="#services">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Climate</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link js-scroll-trigger" href="#about">Accommodation</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+              <a class="nav-link js-scroll-trigger" href="#team">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              <a class="nav-link js-scroll-trigger button special" href="#contact">Sign Up</a>
             </li>
           </ul>
         </div>
@@ -148,7 +148,7 @@ if (isset($_POST['log_in_btn'])) {
     <header class="masthead">
       <div class="container">
         <div class="intro-text">
-          <div class="intro-lead-in">Welcome To Our Studio!</div>
+          <div class="intro-lead-in">Welcome To Our Almaty!</div>
           <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
           <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
         </div>
@@ -160,36 +160,36 @@ if (isset($_POST['log_in_btn'])) {
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Services</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h2 class="section-heading text-uppercase">Almaty</h2>
+            <h3 class="section-subheading text-muted">Город вашей мечты</h3>
+
+            <!-- About -->
+
+  <div class="about">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          
+        </div>
+      </div>
+      <div class="row about_row">
+        <div class="col-lg-6 about_col order-lg-1 order-2">
+          <div class="about_content">
+            <p>Город Алматы расположен в центре евразийского континента, на юго-востоке Республики Казахстан. Географические координаты: 77 градусов восточной долготы и 43 градуса северной широты. Алматы находится на одной параллели с такими известными городами как Гагры и Владивосток.<br>Алматы живописно раскинулся в предгорьях Заилийского Алатау – самого северного горного хребта Тянь-Шаня. Так что, Алматы такой же горный город как Душанбе или Ереван. Общая площадь города - более чем 170 квадратных километров.</p>
+            <div class="button about_button"><a href="#">Read More</a></div>
           </div>
         </div>
-        <div class="row text-center">
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">E-Commerce</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">Responsive Design</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">Web Security</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+        <div class="col-lg-6 about_col order-lg-2 order-1">
+          <div class="about_image">
+            <img src="img/almaty-2022-vue-nocturne.jpg" alt="https://unsplash.com/@sanfrancisco">
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+          </div>
+        </div>
+        
       </div>
     </section>
 
@@ -198,8 +198,8 @@ if (isset($_POST['log_in_btn'])) {
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Portfolio</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h2 class="section-heading2 text-uppercase">Climate</h2>
+            <h3 class="section-subheading text-muted">Климат нашего города</h3>
           </div>
         </div>
         <div class="row">
@@ -210,11 +210,11 @@ if (isset($_POST['log_in_btn'])) {
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+              <img class="img-fluid" src="img/14073f5ecaa4b09d21010dd1fb76c2a2.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Threads</h4>
-              <p class="text-muted">Illustration</p>
+              <h4>Осень</h4>
+              <p class="text-muted"></p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -224,11 +224,11 @@ if (isset($_POST['log_in_btn'])) {
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
+              <img class="img-fluid" src="img/350_197_fixedwidth.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Explore</h4>
-              <p class="text-muted">Graphic Design</p>
+              <h4>Зима</h4>
+              <p class="text-muted"></p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -238,11 +238,11 @@ if (isset($_POST['log_in_btn'])) {
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
+              <img class="img-fluid" src="img/y3-1.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Finish</h4>
-              <p class="text-muted">Identity</p>
+              <h4>Весна</h4>
+              <p class="text-muted"></p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -252,11 +252,11 @@ if (isset($_POST['log_in_btn'])) {
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
+              <img class="img-fluid" src="img/badb23d67fd20f7718abb0aa80e6713b_crop_l_2_t_0_w_764_h_429_resize_w_525_h_.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Lines</h4>
-              <p class="text-muted">Branding</p>
+              <h4>Лето</h4>
+              <p class="text-muted"></p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -269,8 +269,8 @@ if (isset($_POST['log_in_btn'])) {
               <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Southwest</h4>
-              <p class="text-muted">Website Design</p>
+              <h4>Дождливые дни</h4>
+              <p class="text-muted"></p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -283,8 +283,8 @@ if (isset($_POST['log_in_btn'])) {
               <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Window</h4>
-              <p class="text-muted">Photography</p>
+              <h4>Летняя красота</h4>
+              <p class="text-muted"></p>
             </div>
           </div>
         </div>
@@ -296,8 +296,8 @@ if (isset($_POST['log_in_btn'])) {
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">About</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h2 class="section-heading text-uppercase">Accommodation</h2>
+            <h3 class="section-subheading text-muted">Варианты жилья которые мы предлагаем</h3>
           </div>
         </div>
         <div class="row">
@@ -309,11 +309,11 @@ if (isset($_POST['log_in_btn'])) {
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4>2009-2011</h4>
-                    <h4 class="subheading">Our Humble Beginnings</h4>
+                   
+                    <h4 class="subheading">Юрта</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                    <p class="text-muted">Юрта - древнейшее и в то же время современное жилище кочевников. Ее можно отнести к большому достижению материальной культуры казахского народа: она легко перевозится  на лошадях и верблюдах, быстро ставится и разбирается, войлочное покрытие не пропускает дождь, летом это жилище сохраняет прохладу, а зимой - тепло. </p>
                   </div>
                 </div>
               </li>
@@ -323,11 +323,11 @@ if (isset($_POST['log_in_btn'])) {
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4>March 2011</h4>
-                    <h4 class="subheading">An Agency is Born</h4>
+                    
+                    <h4 class="subheading">Отели и гостиницы</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                    <p class="text-muted">Отель «Казахстан» - уникальный исторический памятник мегаполиса Алматы, достояние Республики Казахстан. Образец монументальной, надежной советской архитектуры. Отель «Казахстан» один из немногих отелей в мире, ставший неотъемлемой частью города.</p>
                   </div>
                 </div>
               </li>
@@ -337,7 +337,7 @@ if (isset($_POST['log_in_btn'])) {
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4>December 2012</h4>
+                 
                     <h4 class="subheading">Transition to Full Service</h4>
                   </div>
                   <div class="timeline-body">
@@ -351,7 +351,7 @@ if (isset($_POST['log_in_btn'])) {
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4>July 2014</h4>
+                 
                     <h4 class="subheading">Phase Two Expansion</h4>
                   </div>
                   <div class="timeline-body">
@@ -375,90 +375,21 @@ if (isset($_POST['log_in_btn'])) {
     <!-- Team -->
     <section class="bg-light" id="team">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+           <div class="row about_row">
+        <div class="col-lg-6 about_col order-lg-1 order-2">
+            <h2 class="section-heading text-uppercase">About us</h2>
+            <h3 class="section-subheading text-muted">Цель нашей команды</h3>
+          <div class="about_content">
+            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+           
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
-              <h4>Kay Garland</h4>
-              <p class="text-muted">Lead Designer</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
-              <h4>Larry Parker</h4>
-              <p class="text-muted">Lead Marketer</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
-              <h4>Diana Pertersen</h4>
-              <p class="text-muted">Lead Developer</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
+        <div class="col-lg-6 about_col order-lg-2 order-1">
+          <div class="about_image">
+            <img src="img/almaty-2022-vue-nocturne.jpg" alt="https://unsplash.com/@sanfrancisco">
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-          </div>
+      </div>
         </div>
       </div>
     </section>
