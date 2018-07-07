@@ -130,7 +130,7 @@ button:hover {
     
 
     <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="window.location.href='yes.php'" class="cancelbtn">Yes</button>
+      <button type="button" onclick="window.location.href='home.php'" class="cancelbtn">Yes</button>
       <button type="button" onclick="window.location.href='no.php'" class="cancelbtn">No</button>
     </div>
   </form>
