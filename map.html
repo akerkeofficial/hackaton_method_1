@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #map {
+        height: 400px;  
+        width: 600px;  
+       }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      function initMap(){
+          
+          //Map's options
+        var element = document.getElementById('map');
+        var options = {
+          zoom: 10.7,
+          center: {lat: 43.245898, lng: 76.896063}
+        };
+        var my_map = new google.maps.Map(element, options);
+
+          //User's parameter's
+        var tourist = {
+          position: {lat: 43.245898, lng: 76.896063},
+          info: 'User'
+        };
+
+        var marker_tourist = new google.maps.Marker({
+          position: tourist.position,
+          map: my_map
+        });
+
+          //Entertainments' location
+        var entertainment = [
+          {
+            coordinates: {lat: 43.24336242675781, lng: 76.95339965820312},
+            info: "<b><i>  Name_1</i></b><hr/ ><i>Street:</i><br/>Any information about this location",
+            image: 'img/location.png'
+          },
+          {
+            coordinates: {lat: 43.24188232421875, lng: 76.8262939453125},
+            info: '<b><i>  Name_2</i></b><hr/ ><i>Street:</i><br/>Any information about this location',
+            image: 'img/location.png'
+          },
+          {
+            coordinates: {lat: 43.263641357421875, lng: 76.92070770263672},
+            info: '<b><i>  Name_3</i></b><hr/ ><i>Street:</i><br/>Any information about this location',
+            image: 'img/location.png'
+          },
+          {
+            coordinates: {lat: 43.22713088989258, lng: 76.90538024902344},
+            info: '<b><i>  Name_4</i></b><hr/ ><i>Street:</i><br/>Any information about this location',
+            image: 'img/location.png'
+          },
+          {
+            coordinates: {lat: 43.22899627685547, lng: 76.84170532226562},
+            info: '<b><i>  Name_5</i></b><hr/ ><i>Street:</i><br/>Any information about this location',
+            image: 'img/location.png'
+          },
+        ]
+
+          
+          //Adding markers
+        for(var i=0;i<entertainment.length;i++){
+          addMarker(entertainment[i]);
+        }
+          //Function for adding markers for objects
+        function addMarker(properties){
+          var marker = new google.maps.Marker({
+          position: properties.coordinates,
+          map: my_map,
+          });
+
+            //Icon for entertainment
+          if(properties.image){
+            marker.setIcon(properties.image)
+          }
+            //InfoWindow for locations
+          if(properties.info){
+            var info_window = new google.maps.InfoWindow({
+              content:  properties.info
+            });
+
+            marker.addListener('click', function(){
+              info_window.open(my_map, marker);
+            })
+          }
+        }
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?callback=initMap">
+    </script>
+  </body>
+</html>
