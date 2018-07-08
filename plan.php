@@ -42,7 +42,7 @@ body {
     "nav article ads"
     "footer footer footer";
   grid-template-rows: 80px 1fr 70px;  
-  grid-template-columns: 20% 1fr 15%;
+  grid-template-columns: 10% 1fr 50%;
   grid-row-gap: 10px;
   grid-column-gap: 10px;
   height: 100vh;
@@ -99,16 +99,16 @@ header, footer, article, nav, div {
     
 
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> <?php 
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span><?php 
       $user = $_SESSION['user_email'];
       echo  $user; ?></a></li>
-      <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Log out</a></li>
     </ul>
     <?php endif ?>
 
   </header>
   <article id="mainArticle"> <div 
-<div style="height:30px; width:560px; border-left:5px solid black; background-color: dimgrey; padding-left:10px">8:00
+<div style="height:5px; width:560px; border-left:5px solid black; background-color: dimgrey; padding-left:10px">8:00
 </div>
 <?php
 
@@ -129,7 +129,7 @@ $res = $connection -> query($cost);
 }  
 ?>
 
-<div style="height:30px; width:560px; border-left:5px solid black; background-color: dimgrey; padding-left:10px">12:00
+<div style="height:5px; width:560px; border-left:5px solid black; background-color: dimgrey; padding-left:10px">12:00
 </div>
 
 <?php
@@ -151,7 +151,7 @@ $r = $connection -> query($co);
 }  
 ?>
 <br>
-<div style="height:30px; width:560px; border-left:5px solid black; background-color: dimgrey; padding-left:10px">16:00
+<div style="height:5px; width:560px; border-left:5px solid black; background-color: dimgrey; padding-left:10px">16:00
 </div>
 
 <?php
@@ -172,7 +172,7 @@ $otvet = $connection -> query($next);
     ?>
 
 
-<div style="height:30px; width:560px; border-left:5px solid black; background-color: dimgrey; padding-left:10px">20:00
+<div style="height:5px; width:560px; border-left:5px solid black; background-color: dimgrey; padding-left:10px">20:00
 </div><br>
 <?php
 $next1 = "select * from rest where type = 'Club' AND cost < '$real' ORDER BY carbon_footprint ASC, score DESC, cost ASC limit 3";
@@ -192,10 +192,15 @@ $otvet1 = $connection -> query($next1);
     $connection->close();
 ?> 
 
-<div style="height:30px; width:560px; border-left:5px solid black; background-color: dimgrey; padding-left:10px">00:00
+<div style="height:5px; width:560px; border-left:5px solid black; background-color: dimgrey; padding-left:10px">00:00
 </div></article>
   <nav id="mainNav"></nav>
-  <div id="siteAds"></div>
+  <div id="siteAds">
+    <?php
+            //THERE GOOGLE MAP
+    include 'map.html';
+?>
+  </div>
   <footer align="center" id="pageFooter">Copyright(c)</footer>
 </body>
 
