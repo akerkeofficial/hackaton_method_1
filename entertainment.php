@@ -9,22 +9,12 @@ include('session.php');
 			<b id="welcome">Welcome : <i><?php echo $user; ?></i></b>
 			<b id="logout"><a href="logout.php">Log Out</a></b> 
 		</div>
-		<form action="entertainment.php">
-	  		<input list="entertainments" name="entertainment">
-	  		<datalist id="entertainments">
-	  			<option value="hotel">
-	  			<option value="hostel">
-			    <option value="cafe">
-			    <option value="lounge">
-			    <option value="event">
-			    <option value="club">
-			    <option value="Nature">
-	  		</datalist>
-	  		<input type="submit" value="Search">
-		</form>
+		
 		<?php
+		if(isset($_GET['entertainment'])) {
 		$var = $_GET['entertainment'];
 		echo $var;
+	
 		$servername = "localhost";
 		$username = "root";
 		$password = "";
@@ -64,7 +54,9 @@ include('session.php');
 			echo "Ecological importance: ".$carbon[$i]."<br/ >";
 			echo "<img style='max-width: 225px;' src='".$image[$i]."'>".'<br/ ><hr/ >';
 		}
+
 		$conn->close();
+		};
 		?> 
 
 
