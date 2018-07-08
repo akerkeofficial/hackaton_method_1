@@ -372,11 +372,11 @@ if (isset($_POST['log_in_btn'])) {
                      <h2 class="section-heading text-uppercase">Войти</h2>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="email" type="email" placeholder="Your Email..." required="required" data-validation-required-message="Please enter your email address" name="email_in">
+                    <input class="form-control"  type="email" placeholder="Your Email..." required="required" data-validation-required-message="Please enter your email address" name="email_in">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="password" type="password" placeholder="Your Password..." required="required" data-validation-required-message="Please enter your password" name="password_in">
+                    <input class="form-control" type="password" placeholder="Your Password..." required="required" data-validation-required-message="Please enter your password" name="password_in">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="col-lg-12 text-left">
