@@ -93,7 +93,7 @@ if (isset($_POST['log_in_btn'])) {
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Agency - Start Bootstrap Theme</title>
+    <title>AlmatyGo</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -123,19 +123,19 @@ if (isset($_POST['log_in_btn'])) {
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Home</a>
+              <a class="nav-link js-scroll-trigger" href="#services">Алматы</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Climate</a>
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Климат</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Accommodation</a>
+              <a class="nav-link js-scroll-trigger" href="#about">Достопримечательности</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#team">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger button special" href="#contact">Sign Up</a>
+              <a class="nav-link js-scroll-trigger button special" href="#contact">Войти</a>
             </li>
           </ul>
         </div>
@@ -158,7 +158,7 @@ if (isset($_POST['log_in_btn'])) {
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Almaty</h2>
+            <h2 class="section-heading text-uppercase">Алматы</h2>
             <h3 class="section-subheading text-muted">Город вашей мечты</h3>
 
             <!-- About -->
@@ -174,7 +174,6 @@ if (isset($_POST['log_in_btn'])) {
         <div class="col-lg-6 about_col order-lg-1 order-2">
           <div class="about_content">
             <p>Город Алматы расположен в центре евразийского континента, на юго-востоке Республики Казахстан. Географические координаты: 77 градусов восточной долготы и 43 градуса северной широты. Алматы находится на одной параллели с такими известными городами как Гагры и Владивосток.<br>Алматы живописно раскинулся в предгорьях Заилийского Алатау – самого северного горного хребта Тянь-Шаня. Так что, Алматы такой же горный город как Душанбе или Ереван. Общая площадь города - более чем 170 квадратных километров.</p>
-            <div class="button about_button"><a href="#">Read More</a></div>
           </div>
         </div>
         <div class="col-lg-6 about_col order-lg-2 order-1">
@@ -196,18 +195,13 @@ if (isset($_POST['log_in_btn'])) {
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading2 text-uppercase">Climate</h2>
+            <h2 class="section-heading2 text-uppercase">Климат</h2>
             <h3 class="section-subheading text-muted">Климат нашего города</h3>
           </div>
         </div>
         <div class="row">
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
               <img class="img-fluid" src="img/14073f5ecaa4b09d21010dd1fb76c2a2.jpg" alt="">
             </a>
             <div class="portfolio-caption">
@@ -216,27 +210,17 @@ if (isset($_POST['log_in_btn'])) {
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/350_197_fixedwidth.jpg" alt="">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+              <img class="img-fluid" src="img/06-thumbnaill.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Зима</h4>
+              <h4>Летняя красота</h4>
               <p class="text-muted"></p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/y3-1.jpg" alt="">
+              <img class="img-fluid" src="img/y3-11.jpg" alt="">
             </a>
             <div class="portfolio-caption">
               <h4>Весна</h4>
@@ -245,12 +229,7 @@ if (isset($_POST['log_in_btn'])) {
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/badb23d67fd20f7718abb0aa80e6713b_crop_l_2_t_0_w_764_h_429_resize_w_525_h_.jpg" alt="">
+              <img class="img-fluid" src="img/badb23d67fd20f7718abb0aa80e6713b_crop_l_2_t_0_w_764_h_429_resize_w_525_h_1.jpg" alt="">
             </a>
             <div class="portfolio-caption">
               <h4>Лето</h4>
@@ -259,12 +238,7 @@ if (isset($_POST['log_in_btn'])) {
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
+              <img class="img-fluid" src="img/05-thumbnail1.jpg" alt="">
             </a>
             <div class="portfolio-caption">
               <h4>Дождливые дни</h4>
@@ -272,16 +246,11 @@ if (isset($_POST['log_in_btn'])) {
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+              <img class="img-fluid" src="img/350_197_fixedwidth1.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Летняя красота</h4>
+              <h4>Зима</h4>
               <p class="text-muted"></p>
             </div>
           </div>
@@ -294,8 +263,8 @@ if (isset($_POST['log_in_btn'])) {
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Accommodation</h2>
-            <h3 class="section-subheading text-muted">Варианты жилья которые мы предлагаем</h3>
+            <h2 class="section-heading text-uppercase">Достопримечательности</h2>
+            <h3 class="section-subheading text-muted">В этом разделе вы можете познакомиться с очень духовно-культурными местами</h3>
           </div>
         </div>
         <div class="row">
@@ -303,21 +272,21 @@ if (isset($_POST['log_in_btn'])) {
             <ul class="timeline">
               <li>
                 <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
+                  <img class="rounded-circle img-fluid" src="img/about/11.jpg" alt="">
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
                    
-                    <h4 class="subheading">Юрта</h4>
+                    <h4 class="subheading">Горы</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Юрта - древнейшее и в то же время современное жилище кочевников. Ее можно отнести к большому достижению материальной культуры казахского народа: она легко перевозится  на лошадях и верблюдах, быстро ставится и разбирается, войлочное покрытие не пропускает дождь, летом это жилище сохраняет прохладу, а зимой - тепло. </p>
+                    <p class="text-muted">Горы Алматы, они же Заилийский Алатау (хребет Северного Тянь-Шаня) — сравнительно молодые и, как Великие Гималаи, все еще продолжают расти. Высота горных вершин колеблется в районе 4000 м, высшая точка — пик Талгар. Места здесь красивые, чистые.</p>
                   </div>
                 </div>
               </li>
               <li class="timeline-inverted">
                 <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
+                  <img class="rounded-circle img-fluid" src="img/about/22.jpg" alt="">
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
@@ -331,29 +300,29 @@ if (isset($_POST['log_in_btn'])) {
               </li>
               <li>
                 <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
+                  <img class="rounded-circle img-fluid" src="img/about/33.jpg" alt="">
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
                  
-                    <h4 class="subheading">Transition to Full Service</h4>
+                    <h4 class="subheading">Центральный Государственный музей</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                    <p class="text-muted">Центральный Государственный музей Республики Казахстан является одним из самых больших  музеев Центральной Азии. Три этажа музея включают в себя,как выставочные галереи, так и 4 экспозиционных зала. Каждый посетитель обязательно сможет найти зал или памятник по душе.</p>
                   </div>
                 </div>
               </li>
               <li class="timeline-inverted">
                 <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
+                  <img class="rounded-circle img-fluid" src="img/about/44.jpg" alt="">
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
                  
-                    <h4 class="subheading">Phase Two Expansion</h4>
+                    <h4 class="subheading">Иссыкский золотой человек</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                    <p class="text-muted">Сокровища кургана Иссык, в том числе точная копия экспонировались в Казахском музее археологии, находящемся в Алма-Ате, а теперь в Государственном музее золота и драгоценных металлов Республики Казахстан в Астане. «Золотой человек» на крылатом барсе стал одним из национальных символов Казахстана.</p>
                   </div>
                 </div>
               </li>
@@ -392,34 +361,7 @@ if (isset($_POST['log_in_btn'])) {
       </div>
     </section>
 
-    <!-- Clients -->
-    <section class="py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/envato.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/designmodo.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/themeforest.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/creative-market.jpg" alt="">
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    
     <!-- Contact -->
     <section id="contact">
       <div class="container">
@@ -427,19 +369,19 @@ if (isset($_POST['log_in_btn'])) {
                 <div class="col-md-5">
                 <form method="POST" action="index.php">
                   <div class="col-lg-6 text-center">
-                     <h2 class="section-heading text-uppercase">Sign IN</h2>
+                     <h2 class="section-heading text-uppercase">Войти</h2>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address" name="email_in">
+                    <input class="form-control" id="email" type="email" placeholder="Your Email..." required="required" data-validation-required-message="Please enter your email address" name="email_in">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="password" type="password" placeholder="Your Password *" required="required" data-validation-required-message="Please enter your password" name="password_in">
+                    <input class="form-control" id="password" type="password" placeholder="Your Password..." required="required" data-validation-required-message="Please enter your password" name="password_in">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="col-lg-12 text-left">
                   <div id="success"></div>
-                  <button type="submit" name="log_in_btn">Sign In</button>
+                  <button type="submit" name="log_in_btn">Войти</button>
                 </div>
                 </form>
             </div>
@@ -448,20 +390,20 @@ if (isset($_POST['log_in_btn'])) {
             <div class="col-md-5">
                 <form method="POST" action="index.php">
                   <div class="col-lg-6 text-center">
-                     <h2 class="section-heading text-uppercase">Sign Up</h2>
+                     <h2 class="section-heading text-uppercase">Регистрация</h2>
                   </div>
                             
 
                   <div class="form-group">
-                    <input class="form-control" id="username" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name" name="username">
+                    <input class="form-control" id="username" type="text" placeholder="Your Name..." required="required" data-validation-required-message="Please enter your name" name="username">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address" name="email">
+                    <input class="form-control" id="email" type="email" placeholder="Your Email..." required="required" data-validation-required-message="Please enter your email address" name="email">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" id="password" type="password" placeholder="Your Password *" required="required" data-validation-required-message="Please enter your password" name="password">
+                    <input class="form-control" id="password" type="password" placeholder="Your Password..." required="required" data-validation-required-message="Please enter your password" name="password">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
@@ -470,259 +412,13 @@ if (isset($_POST['log_in_btn'])) {
                   </div>
                   <div class="col-lg-12 text-left">
                   <div id="success"></div>
-                  <button type="submit" name="register_btn">Sign Up</button>
+                  <button type="submit" name="register_btn">Регистрация</button>
                 </div>
                 </form>
             </div>
             </div>
             </div>
             </section>
-          
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <span class="copyright">Copyright &copy; Your Website 2018</span>
-          </div>
-          <div class="col-md-4">
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-facebook"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <ul class="list-inline quicklinks">
-              <li class="list-inline-item">
-                <a href="#">Privacy Policy</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">Terms of Use</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Portfolio Modals -->
-
-    <!-- Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Threads</li>
-                    <li>Category: Illustration</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Explore</li>
-                    <li>Category: Graphic Design</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Finish</li>
-                    <li>Category: Identity</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Lines</li>
-                    <li>Category: Branding</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Southwest</li>
-                    <li>Category: Website Design</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 6 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Window</li>
-                    <li>Category: Photography</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
