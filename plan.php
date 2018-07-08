@@ -33,57 +33,82 @@ $formula = $eda + $trans + $forsmazh + $real;
 
 
 <!doctype html>
-<title>CSS Grid Template 2</title>
+<title></title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 <style>
-body { 
-  display: grid;
-  grid-template-areas: 
-    "header header header"
-    "nav article ads"
-    "footer footer footer";
-  grid-template-rows: 80px 1fr 70px;  
-  grid-template-columns: 10% 1fr 50%;
-  grid-row-gap: 10px;
-  grid-column-gap: 10px;
-  height: 100vh;
-  margin: 0;
-  }  
-header, footer, article, nav, div {
-  padding: 1.2em;
-  background: gainsboro;
-  }
-#pageHeader {
-  grid-area: header;
-  }
-#pageFooter {
-  grid-area: footer;
-  }
-#mainArticle { 
-  grid-area: article;      
-  }
-#mainNav { 
-  grid-area: nav; 
-  }
-#siteAds { 
-  grid-area: ads; 
-  } 
-/* Stack the layout on small devices/viewports. */
-@media all and (max-width: 575px) {
-  body { 
-    grid-template-areas: 
-      "header"
-      "article"
-      "ads"
-      "nav"
-      "footer";
-    grid-template-rows: 80px 1fr 70px 1fr 70px;  
-    grid-template-columns: 1fr;
- }
+.button1 {
+    background-color: #FDD048; /* Green */
+    border: none;
+    color: black;
+    border-radius: 10px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
 }
+.button1:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.button2 {
+    background-color: #FDD048; /* Green */
+    border: none;
+    color: black;
+    border-radius: 10px;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
 </style>
 <body>
-  <header id="pageHeader">
-     <?php if (isset($_SESSION['success'])) : ?>
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="color:#FDD048; font-family: 'Indie Flower', cursive; font-size: 30px;">Priezjie</a>
+    </div>
+    <ul class="nav navbar-nav">
+    <li ><a href="#"></a>
+        
+      </li>
+      <li><a href="#"></a></li>
+      <li class="active"><form action="home.php">
+        <input list="entertainments" name="entertainment"  type="text" placeholder="Поиск" style="margin-top: 10px;">
+        <datalist id="entertainments">
+          <option value="hotel"/>
+          <option value="hostel"/>
+          <option value="cafe"/>
+          <option value="lounge"/>
+          <option value="event"/>
+          <option value="club"/>
+          <option value="Nature"/>
+        </datalist>
+        <button type="submit"  class="button button2">Поиск</button>
+    </form></li>
+      
+    </ul><div class="content">
+    <!-- notification message -->
+
+
+
+    <?php if (isset($_SESSION['success'])) : ?>
       <div class="error success" >
         <h3>
           <?php 
@@ -99,16 +124,22 @@ header, footer, article, nav, div {
     
 
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span><?php 
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> <?php 
       $user = $_SESSION['user_email'];
       echo  $user; ?></a></li>
-      <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Log out</a></li>
+      <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>
     <?php endif ?>
-
-  </header>
-  <article id="mainArticle"> <div 
-<div style="height:5px; width:560px; border-left:5px solid black; background-color: dimgrey; padding-left:10px">8:00
+    </div>
+  </div>
+</nav>
+  <div class="row">
+  <div class="col-sm-3">
+  </div>
+    <div class="col-sm-6" style="margin-left: 30px; margin-top: 50px;">
+  <article id="mainArticle"> 
+  <h3 style=" height: 6px; width:100%;  ">Дорогой клиент, вы можете посетить нижеуказанные места:</h3><br>
+<div style=" width:100%; height: 40px; background-color: #FDD048; padding-left:10px; border-radius: 15px;"><h3 style=" height: 6px; width:100%;  padding-left:50%;">8:00</h3>
 </div>
 <?php
 
@@ -117,7 +148,6 @@ $res = $connection -> query($cost);
 
   if ($res->num_rows > 0) {
 
-    echo "Дорогой клиент, вы можете посетить нижеуказанные места:". "<br>" . "<br>";
 
     // output data of each row
     while($row = $res->fetch_assoc()) {
@@ -129,8 +159,7 @@ $res = $connection -> query($cost);
 }  
 ?>
 
-<div style="height:5px; width:560px; border-left:5px solid black; background-color: dimgrey; padding-left:10px">12:00
-</div>
+<div style=" width:100%; height: 40px; background-color: #FDD048; padding-left:10px; border-radius: 15px;"><h3 style=" height: 6px; width:100%;  padding-left:50%;">12:00</h3></div>
 
 <?php
 
@@ -151,8 +180,7 @@ $r = $connection -> query($co);
 }  
 ?>
 <br>
-<div style="height:5px; width:560px; border-left:5px solid black; background-color: dimgrey; padding-left:10px">16:00
-</div>
+<div style=" width:100%; height: 40px; background-color: #FDD048; padding-left:10px; border-radius: 15px;"><h3 style=" height: 6px; width:100%;  padding-left:50%;">16:00</h3></div>
 
 <?php
 $next = "select * from rest where type = 'Lounge' AND cost < '$real' ORDER BY carbon_footprint ASC, score DESC, cost ASC limit 3";
@@ -172,8 +200,7 @@ $otvet = $connection -> query($next);
     ?>
 
 
-<div style="height:5px; width:560px; border-left:5px solid black; background-color: dimgrey; padding-left:10px">20:00
-</div><br>
+<div style=" width:100%; height: 40px; background-color: #FDD048; padding-left:10px; border-radius: 15px;"><h3 style=" height: 6px; width:100%;  padding-left:50%;">20:00</h3></div><br>
 <?php
 $next1 = "select * from rest where type = 'Club' AND cost < '$real' ORDER BY carbon_footprint ASC, score DESC, cost ASC limit 3";
 $otvet1 = $connection -> query($next1);
@@ -192,8 +219,12 @@ $otvet1 = $connection -> query($next1);
     $connection->close();
 ?> 
 
-<div style="height:5px; width:560px; border-left:5px solid black; background-color: dimgrey; padding-left:10px">00:00
-</div></article>
+<div style=" width:100%; height: 40px; background-color: #FDD048; padding-left:10px; border-radius: 15px;"><h3 style=" height: 6px; width:100%;  padding-left:50%;">00:00</h3></div></article>
+</div>
+</div>
+<br>
+<br>
+<br>
   <nav id="mainNav"></nav>
   <div id="siteAds">
     <?php
