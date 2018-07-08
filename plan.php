@@ -42,7 +42,7 @@ $formula = $eda + $trans + $forsmazh + $real;
 </div>
 <?php
 
-$cost = "select * FROM rest where type = 'Cafe' AND cost < '$eda' ORDER BY score DESC, cost ASC limit 3";
+$cost = "select * FROM rest where type = 'cafe' AND cost < '$eda' ORDER BY score DESC, cost ASC limit 3";
 $res = $connection -> query($cost);
 
   if ($res->num_rows > 0) {
@@ -85,7 +85,7 @@ $r = $connection -> query($co);
 </div>
 
 <?php
-$next = "select * from rest where type = 'Lounge' AND cost < '$real' ORDER BY score DESC, cost ASC limit 3";
+$next = "select * from rest where type = 'lounge' AND cost < '$real' ORDER BY score DESC, cost ASC limit 3";
 $otvet = $connection -> query($next);
 
     if($otvet->num_rows > 0){
@@ -105,7 +105,7 @@ $otvet = $connection -> query($next);
 <div style="height:30px; width:560px; border-left:5px solid black; background-color:silver; padding-left:10px">20:00
 </div><br>
 <?php
-$next1 = "select * from rest where type = 'Club' AND cost < '$real' ORDER BY score DESC, cost ASC limit 3";
+$next1 = "select * from rest where type = 'club' AND cost < '$real' ORDER BY score DESC, cost ASC limit 3";
 $otvet1 = $connection -> query($next1);
 
     if($otvet1->num_rows > 0){
