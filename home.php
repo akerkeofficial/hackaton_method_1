@@ -12,16 +12,60 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 </head>
+<style type="text/css">
+ .button1 {
+    background-color: #FDD048; /* Green */
+    border: none;
+    color: black;
+    border-radius: 10px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.button1:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.button2 {
+    background-color: #FDD048; /* Green */
+    border: none;
+    color: black;
+    border-radius: 10px;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+</style>
 <body>
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Priezjie.com</a>
+      <a class="navbar-brand" href="#" style="color:#FDD048; font-family: 'Indie Flower', cursive; font-size: 30px;">Priezjie</a>
     </div>
     <ul class="nav navbar-nav">
+    <li ><a href="#"></a>
+        
+      </li>
+      <li><a href="#"></a></li>
       <li class="active"><form action="home.php">
-        <input list="entertainments" name="entertainment">
+        <input list="entertainments" name="entertainment"  type="text" placeholder="Поиск" style="margin-top: 10px;">
         <datalist id="entertainments">
           <option value="hotel"/>
           <option value="hostel"/>
@@ -31,12 +75,9 @@
           <option value="club"/>
           <option value="Nature"/>
         </datalist>
-        <input type="submit" value="Search">
+        <button type="submit"  class="button button2">Поиск</button>
     </form></li>
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
-        
-      </li>
-      <li><a href="#">Page 2</a></li>
+      
     </ul><div class="content">
     <!-- notification message -->
 
@@ -67,22 +108,23 @@
     </div>
   </div>
 </nav>
-<div class="header">
-	<h2>Home Page</h2>
-</div>
+
 
 		<div class="row">
-    <div class="col-sm-1">
-    </div>
-    <div class="col-sm-5">
-
+    
+    <div class="col-sm-5" style="margin-left: 30px;">
+<div class="header">
+<br>
+  <h3>Вы можете вбить вашу сумму и посчитать расходы</h3>
+</div>
 
 <form  method="POST">
-    <h2>Input your budget</h2>
-    <p><textarea rows="10" cols="45" name="input_text"></textarea></p>
-    <p><input type="submit" value="Отправить" name="money_save"></p>
+    <p><input class="form-control"  type="text" placeholder="Ваша сумма. Например 2000"  name="input_text"></p>
+    <p><button name="money_save" class="button button1">Отправить</button></p>
 </form>
 </div>
+<div class="col-sm-1">
+    </div>
   <div class="col-sm-6">
 
 		<?php
@@ -109,7 +151,7 @@ if(isset($_POST['money_save']))
 <?php
     if(isset($_GET['entertainment'])) {
     $var = $_GET['entertainment'];
-    echo "<h2>$var</h2>";
+    echo "<h1 style='margin-left:200px; font-size:50px; '>$var</h1>";
   
     $servername = "localhost";
     $username = "root";
@@ -131,12 +173,13 @@ if(isset($_POST['money_save']))
     //$image = $row2['photo'];
     if($result->num_rows>0){
       while($row=$result->fetch_assoc()){
+        $image[]=$row['photo'];
         $name[]=$row['name'];
         $score[]=$row['score'];
         $cost[]=$row['cost'];
         $address[]=$row['address'];
         $carbon[]=$row['carbon_footprint'];
-        $image[]=$row['photo'];
+        
       }
     }
 
@@ -147,13 +190,14 @@ if(isset($_POST['money_save']))
 
     for($i=0;$i<sizeof($name);$i++){ ?>
       <div class="col-sm-6"> <?php
-
       echo "<h2>$name[$i]</h2>"."<br/ >";
-      echo "Score: ".$score[$i]." ";
-      echo "Avg. check: ".$cost[$i]."<br/ >";
-      echo "Street: ".$address[$i]."<br/ >";
-      echo "Ecological importance: ".$carbon[$i]."<br/ >";
-      echo "<img style='max-width: 225px;' src='".$image[$i]."'>".'<br/ ><hr/ >'; ?>
+      echo "<img style='max-width: 250px; border-radius:15px;' src='".$image[$i]."'>".'<br/ ><hr/ >';
+      echo "Рейтинг: ".$score[$i]."<br/ >";
+      echo "Средний чекЖ ".$cost[$i]."<br/ >";
+      echo "Экологическое значение: "."<h4>$carbon[$i]</h4>"."<hr/ >";
+      echo "Адрес: ".$address[$i]."<br/ >";
+       ?>
+       <br>
       </div>
     <?php } ?>
     </div>
@@ -162,7 +206,7 @@ if(isset($_POST['money_save']))
     };
     ?> 
     </div>
-
+<h3 style="border-r"></h3>
 </div>
 </body>
 </html>

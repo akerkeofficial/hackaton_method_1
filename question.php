@@ -12,17 +12,22 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 /* Set a style for all buttons */
 button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
+    background-color: #FDD048; /* Green */
     border: none;
+    color: black;
+    border-radius: 10px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
     cursor: pointer;
-    width: 100%;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
 }
-
 button:hover {
-    opacity: 0.8;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 /* Extra styles for the cancel button */
@@ -120,7 +125,7 @@ button:hover {
 </div>
 
 <br>
-<button onclick="document.getElementById('id01').style.display='block'" >Login</button>
+<button onclick="document.getElementById('id01').style.display='block'" >Click on ME</button>
 
 <div id="id01" class="modal">
   
